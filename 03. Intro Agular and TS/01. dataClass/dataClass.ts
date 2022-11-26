@@ -19,6 +19,6 @@ class Data {
     }
 }
 
-let myData = new Data('GET', 'http://google.com', 'HTTP/1.1', 'Hello', 'Hi', true);
+let myData = new Data('GET', 'http://google.com', 'HTTP/1.1', 'Hello', '', true);
 console.log(myData.printResult());
 

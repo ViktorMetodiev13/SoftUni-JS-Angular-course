@@ -11,5 +11,5 @@ var Data = /** @class */ (function () {
     };
     return Data;
 }());
-var myData = new Data('GET', 'http://google.com', 'HTTP/1.1', 'Hello', 'Hi', true);
+var myData = new Data('GET', 'http://google.com', 'HTTP/1.1', 'Hello', '', true);
 console.log(myData.printResult());
