@@ -21,7 +21,7 @@ class Watermelon extends Melon {
     }
 
     toString() {
-        return console.log(`Element: Water \nSort: ${this.melonSort}`);
+        return console.log(`Element: Water \nSort: ${this.melonSort} \nElement Index: ${this.elementIndex}`);
     }
 }
 
@@ -34,7 +34,7 @@ class Firemelon extends Melon {
     }
 
     toString() {
-        return console.log(`Element: Fire \nSort: ${this.melonSort}`);
+        return console.log(`Element: Fire \nSort: ${this.melonSort} \nElement Index: ${this.elementIndex}`);
     }
 }
 
@@ -47,7 +47,7 @@ class Earthmelon extends Melon {
     }
 
     toString() {
-        return console.log(`Element: Earth \nSort: ${this.melonSort}`);
+        return console.log(`Element: Earth \nSort: ${this.melonSort} \nElement Index: ${this.elementIndex}`);
     }
 }
 
@@ -60,9 +60,9 @@ class Airmelon extends Melon {
     }
 
     toString() {
-        return console.log(`Element: Air \nSort: ${this.melonSort}`);
+        return console.log(`Element: Air \nSort: ${this.melonSort} \nElement Index: ${this.elementIndex}`);
     }
 }
 
-let watermelon : Watermelon = new Watermelon(12.5, "Kingsize");
+let watermelon : Firemelon = new Firemelon(10.5, "Kingsize");
 console.log(watermelon.toString());

@@ -18,9 +18,8 @@ var Box = /** @class */ (function () {
     return Box;
 }());
 var box = new Box();
-box.add(1);
-box.add(2);
-box.add(3);
+box.add("Pesho");
+box.add("Gosho");
 console.log(box.count);
 box.remove();
 console.log(box.count);
