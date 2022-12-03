@@ -31,7 +31,7 @@ var Watermelon = /** @class */ (function (_super) {
         return _this;
     }
     Watermelon.prototype.toString = function () {
-        return console.log("Element: Water \nSort: ".concat(this.melonSort));
+        return console.log("Element: Water \nSort: ".concat(this.melonSort, " \nElement Index: ").concat(this.elementIndex));
     };
     return Watermelon;
 }(Melon));
@@ -43,7 +43,7 @@ var Firemelon = /** @class */ (function (_super) {
         return _this;
     }
     Firemelon.prototype.toString = function () {
-        return console.log("Element: Fire \nSort: ".concat(this.melonSort));
+        return console.log("Element: Fire \nSort: ".concat(this.melonSort, " \nElement Index: ").concat(this.elementIndex));
     };
     return Firemelon;
 }(Melon));
@@ -55,7 +55,7 @@ var Earthmelon = /** @class */ (function (_super) {
         return _this;
     }
     Earthmelon.prototype.toString = function () {
-        return console.log("Element: Earth \nSort: ".concat(this.melonSort));
+        return console.log("Element: Earth \nSort: ".concat(this.melonSort, " \nElement Index: ").concat(this.elementIndex));
     };
     return Earthmelon;
 }(Melon));
@@ -67,9 +67,9 @@ var Airmelon = /** @class */ (function (_super) {
         return _this;
     }
     Airmelon.prototype.toString = function () {
-        return console.log("Element: Air \nSort: ".concat(this.melonSort));
+        return console.log("Element: Air \nSort: ".concat(this.melonSort, " \nElement Index: ").concat(this.elementIndex));
     };
     return Airmelon;
 }(Melon));
-var watermelon = new Firemelon(12.5, "Kingsize");
+var watermelon = new Firemelon(10.5, "Kingsize");
 console.log(watermelon.toString());
