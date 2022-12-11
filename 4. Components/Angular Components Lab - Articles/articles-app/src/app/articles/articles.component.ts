@@ -8,11 +8,9 @@ import { Article } from '../models/article.model';
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
-  articles!: Article[];
+  articles: Article[] = [];
 
-  constructor() {
-
-  }
+  constructor() { }
 
   ngOnInit(): void {
       this.articles = new ArticleData().getData();
