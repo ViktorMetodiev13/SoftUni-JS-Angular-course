@@ -64,5 +64,5 @@ class Airmelon extends Melon {
     }
 }
 
-let watermelon : Firemelon = new Firemelon(10.5, "Kingsize");
+let watermelon : Watermelon = new Watermelon(12.5, "Kingsize");
 console.log(watermelon.toString());
