@@ -9,6 +9,8 @@ import { RecentPostsComponent } from './recent-posts/recent-posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './main/main.component';
 import { AuthModule } from './auth/auth.module';
+import { SharedRoutingModule } from './shared/shared-routing.module';
+import { NotFoundPageComponent } from './shared/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { AuthModule } from './auth/auth.module';
     ThemeListComponent,
     RecentPostsComponent,
     MainComponent,
+    NotFoundPageComponent
   ],
   imports: [
     AuthModule,
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
