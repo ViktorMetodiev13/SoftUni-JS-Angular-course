@@ -10,7 +10,7 @@ import { AuthService } from '../auth.service';
 export class LoginComponent {
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router, private authServie: AuthService) {
-
+    
   }
 
   loginHandler(): void {
