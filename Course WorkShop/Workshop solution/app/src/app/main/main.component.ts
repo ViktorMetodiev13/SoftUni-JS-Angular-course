@@ -8,7 +8,7 @@ import { AuthService } from '../auth/auth.service';
 })
 export class MainComponent {
 
-  get isLogged() {
+  get isLoggedIn() {
     return this.authService.isLoggedIn;
   }
 

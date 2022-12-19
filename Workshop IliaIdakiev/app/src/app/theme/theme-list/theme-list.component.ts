@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
-import { Theme } from '../shared/interfaces/theme';
+import { ApiService } from '../../api.service';
+import { ITheme } from '../../shared/interfaces';
 
 @Component({
   selector: 'app-theme-list',
@@ -9,7 +9,8 @@ import { Theme } from '../shared/interfaces/theme';
 })
 export class ThemeListComponent implements OnInit {
 
-  themeList: Theme[] | null = null;
+  themeList: ITheme[] | null = null;
+  errorFetcingData = false;
 
   constructor(private apiService: ApiService) { }
 
@@ -19,9 +20,10 @@ export class ThemeListComponent implements OnInit {
         this.themeList = value;
       },
       error: (err) => {
+        this.errorFetcingData = true;
         console.error(err);
       }
     });
   }
-}
 
+}

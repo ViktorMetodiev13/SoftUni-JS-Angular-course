@@ -6,7 +6,7 @@ import { SharedRoutingModule } from './shared-routing.module';
 
 @NgModule({
   declarations: [
-    NotFoundPageComponent,
+    
   ],
   imports: [
     CommonModule,

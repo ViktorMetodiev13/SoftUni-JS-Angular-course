@@ -1,5 +1,5 @@
 <div clas="container">
-    <ng-container *ngIf="isLogged">
+    <ng-container *ngIf="isLoggedIn">
         <main>
             <div class="theme-title">
                 <app-theme-list></app-theme-list>
@@ -7,7 +7,7 @@
         </main>
         <app-recent-posts></app-recent-posts>
     </ng-container>
-    <ng-container *ngIf="!isLogged">
+    <ng-container *ngIf="!isLoggedIn">
 
         <div class="welcome">
             <h3>Welcome!</h3>
