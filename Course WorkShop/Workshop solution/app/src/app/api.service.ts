@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { enviroment } from "../environments/environment";
-import { Theme } from './interfaces/theme';
-import { Post } from './interfaces/Post';
+import { Theme } from './shared/interfaces/theme';
+import { Post } from './shared/interfaces/Post';
 
 const apiURL = enviroment.apiURL
 
